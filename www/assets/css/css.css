@@ -233,7 +233,6 @@ video {
   color: #fff;
   font-weight: 300;
   padding-top: 25px;
-  font-size: 4vmin;
 }
 .o-clocker-loading-logo {
   position: relative;
@@ -260,12 +259,10 @@ video {
 }
 .o-clocker-sleep-currentstation-label {
   font-size: 14px;
-  font-size: 3.5vmin;
   color: rgba(255,255,255,0.6);
 }
 .o-clocker-sleep-currentstation-name {
   font-size: 16px;
-  font-size: 4vmin;
   color: #fff;
 }
 .o-clocker-sleep-bigtimer {
@@ -283,26 +280,24 @@ video {
   display: block;
   height: 125px;
   line-height: 125px;
-  font-size: 19vmin;
+  font-size: 120px;
 }
 .o-clocker-sleep-bigtimer .table div {
   font-size: 40px;
   font-weight: 300;
-  font-size: 6vmin;
 }
 .o-clocker-sleep-bigtimer .table div.texttext {
   font-size: 20px;
   font-weight: 300;
   padding-top: 10px;
-  font-size: 4vmin;
 }
 .o-clocker-sleep-metro {
   padding-top: 45px;
 }
 .o-clocker-sleep-metro-from:before {
   content: '';
-  height: 7vmin;
   width: 8px;
+  width: 14px;
   border: 1px solid #fff;
   border-right: none;
   position: absolute;
@@ -314,10 +309,9 @@ video {
   font-size: 12px;
   color: #fff;
   padding-left: 20px;
-  height: 7vmin;
+  height: 23px;
   line-height: 23px;
   position: relative;
-  font-size: 4vmin;
 }
 .o-clocker-settings {
   padding-left: 15px;
@@ -352,8 +346,6 @@ video {
   padding-left: 12px;
   padding-right: 12px;
   border-radius: 8px;
-  font-size: 4vmin;
-  height: 9vmin;
 }
 .o-clocker-settings-selects-label {
   color: #fff;
@@ -361,7 +353,6 @@ video {
   font-weight: 300;
   padding-bottom: 10px;
   padding-left: 6px;
-  font-size: 4vmin;
 }
 .o-clocker-settings-timer-time {
   width: 30%;
@@ -422,7 +413,7 @@ video {
   height: 3px;
   right: 15%;
   left: 15%;
-  top: 4.8vmin;
+  top: 50%;
 }
 .o-clocker-settings-steps-line-item {
   height: 100%;
@@ -448,12 +439,12 @@ video {
   color: #00bff3;
 }
 .o-clocker-settings-steps-item-bullet {
-  width: 10vmin;
-  height: 10vmin;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   border-radius: 50%;
   background: rgba(0,191,243,0.09);
-  font-size: 5vmin;
-  line-height: 10vmin;
+  font-size: 20px;
   display: inline-block;
   text-align: center;
   -webkit-transition: 0.7s;
@@ -469,7 +460,6 @@ video {
   -webkit-transition: 0.7s;
           transition: 0.7s;
   text-align: center;
-  font-size: 3vmin;
 }
 .o-clocker-settings-buttons {
   padding-bottom: 16px;
@@ -486,7 +476,6 @@ video {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-  font-size: 3vmin;
 }
 .likerstile {
   background: transparent;
@@ -496,7 +485,6 @@ video {
   border: 0;
   outline: none;
   text-align: right;
-  font-size: 4vmin;
 }
 
 .twitter-typeahead {

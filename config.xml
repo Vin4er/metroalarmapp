@@ -47,15 +47,15 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
     <gap:plugin name="org.apache.cordova.core.vibration" /> 
-     <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
     <gap:plugin name="com.red_folder.phonegap.plugin.backgroundservice" />
     <gap:plugin name="cordova-plugin-admobpro" />
 
     <icon src="www/icon-96-ldpi.png" />
-    <icon gap:platform="android" gap:density="ldpi"  src="www/icon-96-ldpi.png" />
-    <icon gap:platform="android" gap:density="mdpi"  src="www/icon-96-ldpi.png" />
-    <icon gap:platform="android" gap:density="hdpi"  src="www/icon-96-ldpi.png" />
-    <icon gap:platform="android" gap:density="xhdpi" src="www/icon-96-ldpi.png" />
+    <icon gap:platform="android" gap:density="ldpi"  src="www/res/icon/android/icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:density="mdpi"  src="www/res/icon/android/icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:density="hdpi"  src="www/res/icon/android/icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:density="xhdpi" src="www/res/icon/android/icon-96-ldpi.png" />
 
   
     <icon gap:platform="ios" height="57" src="www/res/icon/ios/icon-57.png" width="57" />
@@ -64,18 +64,7 @@
     <icon gap:platform="ios" height="144" src="www/res/icon/ios/icon-72-2x.png" width="144" />
 
   
-    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="www/splash.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="www/splash.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="www/splash.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/splash.png" />
 
-    <gap:splash gap:platform="blackberry" src="www/res/screen/blackberry/screen-225.png" />
-    <gap:splash gap:platform="ios" height="480" src="www/splash.png" width="320" />
-    <gap:splash gap:platform="ios" height="960" src="www/splash.png" width="640" />
-    <gap:splash gap:platform="ios" height="1136" src="www/splash.png" width="640" />
-    <gap:splash gap:platform="ios" height="1024" src="www/splash.png" width="768" />
-    <gap:splash gap:platform="ios" height="768" src="www/splash.png" width="1024" />
-    <gap:splash gap:platform="winphone" src="www/splash.png" />
 
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />

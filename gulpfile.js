@@ -99,6 +99,11 @@ gulp.task('images', function() {
         .pipe(gulp.dest('www/assets/img'));
 });
 
+gulp.task('res', function() {
+    gulp.src('dev/res/**/*')
+        .pipe(gulp.dest('www/res'));
+});
+
 	// Watch Task
 gulp.task('watch', function(){
  	livereload.listen();
@@ -109,6 +114,6 @@ gulp.task('watch', function(){
 });
 
 
-gulp.task("build", ['images',  'js' ,'stylus', 'jade']);
+gulp.task("build", ['images',  'js' ,'stylus', 'jade', 'res']);
 // Default Task
 gulp.task('default', ['build', 'watch', "webserver"]);
