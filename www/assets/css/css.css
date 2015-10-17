@@ -229,7 +229,8 @@ video {
 }
 .o-clocker-loading-text {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
+  letter-spacing: 1px;
   color: #fff;
   font-weight: 300;
   padding-top: 25px;
@@ -243,7 +244,7 @@ video {
 }
 .o-clocker-loading-logo img {
   display: inline-block;
-  max-width: 80%;
+  width: 242px;
 }
 .o-clocker-sleep {
   padding-left: 15px;
@@ -278,8 +279,8 @@ video {
 .o-clocker-sleep-bigtimer .table span {
   font-weight: 300;
   display: block;
-  height: 125px;
-  line-height: 125px;
+  height: 88px;
+  line-height: 88px;
   font-size: 120px;
 }
 .o-clocker-sleep-bigtimer .table div {
@@ -297,16 +298,16 @@ video {
 .o-clocker-sleep-metro-from:before {
   content: '';
   width: 8px;
-  width: 14px;
+  height: 22px;
   border: 1px solid #fff;
   border-right: none;
   position: absolute;
   left: 4px;
-  top: 10px;
+  top: 11px;
 }
 .o-clocker-sleep-metro-item {
   text-transform: capitalize;
-  font-size: 12px;
+  font-size: 13px;
   color: #fff;
   padding-left: 20px;
   height: 23px;
@@ -413,7 +414,7 @@ video {
   height: 3px;
   right: 15%;
   left: 15%;
-  top: 50%;
+  top: 19px;
 }
 .o-clocker-settings-steps-line-item {
   height: 100%;
@@ -498,7 +499,6 @@ video {
   font-weight: 400;
   font-size: 14px;
   color: #fff;
-  font-size: 4vmin;
 }
 .tt-menu {
   right: -15px !important;
@@ -515,7 +515,6 @@ video {
 .tt-suggestion strong {
   font-weight: 400;
   font-size: 14px;
-  font-size: 4vmin;
   text-transform: capitalize;
 }
 .typehead {
