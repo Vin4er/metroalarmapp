@@ -1,0 +1,303 @@
+
+html
+	width 100%
+	height 100%
+body
+	-webkit-touch-callout: none
+	-webkit-text-size-adjust: none
+	-webkit-user-select: none
+	background-color: #E4E4E4
+	background-attachment: fixed
+	font-family: 'Roboto', sans-serif;
+	height: 100%
+	margin: 0px
+	padding: 0px
+	color #ffffff
+	width: 100%
+
+body
+	*
+		box-sizing: border-box
+		font-family: 'Roboto', sans-serif;
+audio, video
+	display none
+.table
+	display table
+	width 100%
+.row
+	display table-row
+.cell
+	text-align center
+	display table-cell
+	vertical-align middle
+	width 50%
+.hidden
+	display none
+
+.o-clocker
+	position relative
+	width 100%
+	height 100%
+	background: radial-gradient(ellipse at center, #232632 0%,#12141a 100%);
+	&-loading
+		background: inherit
+		position absolute
+		z-index 9999
+		bottom 0
+		right 0
+		left 0
+		top 0
+		.table
+			height 100%
+		&-text
+			text-align center
+			font-size 24px
+			color #ffffff
+			font-weight: 300
+			padding-top 25px
+			font-size: 4vmin;
+			
+		&-logo
+			position relative
+			z-index 99999
+			display inline-block
+			// height 110px
+			width 100%
+			text-align center
+			img
+				display inline-block
+				max-width 80%
+	&-sleep
+		padding-left 15px
+		padding-right 15px
+		position absolute
+		bottom 0
+		right 0
+		left 0
+		top 0
+		&-currentstation
+			text-align center
+			&-label
+				font-size 14px
+				font-size: 3.5vmin;
+				color rgba(255,255,255,.6)
+			&-name
+				font-size 16px
+				font-size: 4vmin;
+				color rgba(255,255,255,1)
+		&-bigtimer
+			position absolute
+			bottom 0
+			right 0
+			left 0
+			top 0
+			.table
+				height 100%
+				span
+					font-weight: 300
+					display: block
+					height: 125px
+					line-height: 125px
+					font-size: 19vmin;
+				div
+					font-size 40px
+					font-weight 300
+					font-size: 6vmin;
+					&.texttext
+						font-size: 20px
+						font-weight: 300
+						padding-top 10px
+						font-size: 4vmin;
+		&-metro
+			padding-top 45px
+			&-from
+				&:before
+					content: '';
+					height: 7vmin;
+					width: 8px;
+					border: 1px solid #fff;
+					border-right: none;
+					position: absolute;
+					left: 4px;
+					top: 10px;
+			&-item
+				text-transform: capitalize;
+				font-size: 12px;
+				color: #fff;
+				padding-left: 20px;
+				height: 7vmin;
+				line-height: 23px;
+				position: relative;
+				font-size: 4vmin;
+				// @media (min-width: 600px)
+				// 	font-size 16px
+	&-settings
+		padding-left 15px
+		padding-right 15px
+		position absolute
+		bottom 0
+		right 0
+		left 0
+		top 0
+		&-selects
+			padding-bottom 15px
+			padding-top 45px
+			position: relative;
+			z-index: 10;
+			&-item
+				padding-bottom 25px
+			&-select
+				width 100%
+				input
+					background: rgba(255,255,255, .1)
+					color #ff4f4f
+					font-size 14px
+					font-weight 400
+					height 33px
+					border 0
+					width 100%
+					outline none
+					padding-left 12px
+					padding-right 12px
+					border-radius 8px
+					
+					font-size: 4vmin;
+					height: 9vmin;
+					// @media (min-width: 600px)
+					// 	height 43px
+					// 	font-size 20px
+			&-label
+				color white
+				font-size 18px
+				font-weight 300
+				padding-bottom 10px
+				padding-left 6px
+				
+				font-size: 4vmin;
+				// @media (min-width: 600px)
+				// 	font-size 24px
+		&-timer
+			&-time
+				width 30%
+				text-align right
+				.wrap-time
+					display inline-block
+					text-align center
+					span
+						font-size 60px
+						font-weight 300
+						display block
+						height 62px
+					b
+						font-size 18px
+						font-weight 300
+						height 17px
+						display block
+			&-button
+				width 70%
+				text-align center
+				a
+					width: 85%
+					border-top: 1px solid #fff
+					border-bottom: 1px solid #fff
+					font-size: 18px
+					font-weight: 700
+					text-align: center
+					line-height: 65px
+					display: inline-block
+					color: #fff
+					text-decoration: none
+					position: relative
+					top: 4px
+					// @media (min-width: 600px)
+					// 	font-size 20px
+		&-steps
+			position absolute
+			bottom 120px
+			@media screen and (max-height: 540px) and (min-height: 500px)
+				bottom 70px
+			@media screen and (max-height: 500px)
+				bottom 65px
+			left: 0
+			right 0
+			&-line
+				&-wrap
+					position: absolute
+					height: 3px
+					right 15%
+					left 15%
+					top: 4.8vmin
+				&-item
+					height 100%
+					background: #00bff3
+			&-items
+				width 80%
+				margin auto
+				position relative
+			&-item
+				display inline-block
+				vertical-align middle
+				width 33.3%
+				text-align center
+				position relative
+				z-index 1
+				&.active
+					.o-clocker-settings-steps-item-bullet
+						background #00bff3
+					.o-clocker-settings-steps-item-text
+						color #00bff3
+				&-bullet
+					width: 10vmin;
+					height: 10vmin;
+					border-radius: 50%;
+					background: rgba(0,191,243,0.09);
+					font-size: 5vmin;
+					line-height: 10vmin;
+					display: inline-block;
+					text-align: center;
+					-webkit-transition: 0.7s;
+					transition: 0.7s;
+					font-weight: 700;
+					// @media (min-width: 600px)
+					// 	width: 55px;
+					// 	height: 55px;
+					// 	font-size: 26px;
+					// 	line-height: 55px;
+				&-text
+					padding-top 8px
+					font-size 12px
+					color #00bff3
+					font-weight 400
+					display block
+					transition .7s
+					text-align center
+					font-size: 3vmin;
+					// @media (min-width: 600px)
+					// 	font-size 20px
+		&-buttons
+			padding-bottom 16px
+			position absolute
+			bottom 0
+			left: 0
+			right 0
+			z-index 1000
+			.table
+				height 30px
+				a
+					color white
+					font-size 14px
+					text-decoration none
+					font-size: 3vmin;
+					// @media (min-width: 600px)
+					// 	font-size 20px
+.likerstile
+	background transparent
+	color white
+	font-size 14px
+	text-decoration none
+	border 0
+	outline none
+	text-align right
+	font-size: 4vmin;
+	// @media (min-width: 600px)
+	// 	font-size 20px

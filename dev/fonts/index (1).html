@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Курс Дизайн Одежды от Академии Моды</title>
+		<link href="assets/css/css.css" rel="stylesheet" type="text/css">
+		<link href="assets/js/fancyapps/source/jquery.fancybox.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="js-tabs">
+				<div class="js-tabs-header"><a href="#js-tab-1" class="js-tabs-header-item active"><span>Оплата обучения</span></a><a href="#js-tab-2" class="js-tabs-header-item"><span>Оплата общежития</span></a></div>
+				<div class="js-tabs-body">
+					<div id="js-tab-1" class="js-tabs-body-item active">
+						<p>Для генерации квитанции заполните поля</p>
+						<form action="">
+							<div class="table">
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">ФИО обучающегося </div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="fio_u">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Номер договора</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="num_order" class="num_order">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Дата договора</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="date_order" class="mask_date">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Семестр оплаты</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="semest">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">ФИО плательщика</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="fio_p">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Адрес плательщика</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="adr">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Сумма</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="rub" class="rub"><span>рублей</span>
+											<input type="text" name="kop" class="kop"><span>копеек</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button>Сгенерировать квитанцию</button>
+						</form>
+					</div>
+					<div id="js-tab-2" class="js-tabs-body-item">
+						<p>Для генерации квитанции заполните поля</p>
+						<form action="">
+							<div class="table">
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Услуга</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<select name="service_name"></select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Общежитие </div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<select name="objaga"></select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">ФИО проживающего </div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="fio_proj">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Номер договора</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="num_order" class="num_order">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Дата договора</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="fio_p" class="mask_date">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Период оплаты</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="period">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">ФИО плательщика</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="fio_plat">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Адрес плательщика</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="adr">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="cell js-tabs-body-item-title">
+										<div class="cellinner">Сумма</div>
+									</div>
+									<div class="cell js-tabs-body-item-input">
+										<div class="cellinner">
+											<input type="text" name="rub" class="rub"><span>рублей</span>
+											<input type="text" name="kop" class="kop"><span>копеек</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button>Сгенерировать квитанцию</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/fancyapps/source/jquery.fancybox.js"></script>
+	<script src="assets/js/jquery.maskedinput-1.2.2.js"></script>
+	<script src="assets/js/js.js"></script>
+</html>

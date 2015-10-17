@@ -1,0 +1,149 @@
+doctype html
+head
+	meta(charset='utf-8')
+	meta(name='format-detection', content='telephone=no')
+	meta(name='msapplication-tap-highlight', content='no')
+	// WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323
+	meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height')
+	
+
+	link(rel='stylesheet', type='text/css', href='assets/css/css.css')
+	title Будильник для метро
+
+
+
+
+
+.o-clocker
+
+
+	.o-clocker-sleep.hidden
+
+		.o-clocker-sleep-metro
+			.o-clocker-sleep-metro-item.o-clocker-sleep-metro-from
+			.o-clocker-sleep-metro-item.o-clocker-sleep-metro-to
+
+
+		.o-clocker-sleep-bigtimer
+			.table
+				.row
+					.cell
+						span.bigtimer
+						div.texttimer
+						div.texttext
+
+		.o-clocker-sleep-currentstation.o-clocker-settings-steps.hidden
+			.o-clocker-sleep-currentstation-label Текущая станция:
+			.o-clocker-sleep-currentstation-name Охотный ряд
+	
+		.o-clocker-settings-buttons
+			.table
+				.row
+					.cell
+						a(href="#").resetMetro Сбросить маршрут
+
+
+
+
+
+	//- установки
+	.o-clocker-settings.hidden
+
+		.o-clocker-settings-selects
+
+			.o-clocker-settings-selects-item.from
+				.o-clocker-settings-selects-label Где вы сейчас находитесь?
+				.o-clocker-settings-selects-select
+					input.typehead(type="text")
+
+			.o-clocker-settings-selects-item.to.hidden
+				.o-clocker-settings-selects-label На какой станции разбудить?
+				.o-clocker-settings-selects-select
+					input.typehead(type="text")
+
+			
+		.o-clocker-settings-timer.hidden
+			.table
+				.row
+					.cell.o-clocker-settings-timer-time.hidden
+						span.wrap-time
+							span.minutes 22
+							b минуты
+					.cell.o-clocker-settings-timer-button.hidden
+						a(href="#") Поехали!
+
+
+		.o-clocker-settings-steps
+
+			.o-clocker-settings-steps-items
+				.o-clocker-settings-steps-line-wrap
+					.o-clocker-settings-steps-line-item(style="width: 0%")
+				span.o-clocker-settings-steps-item.active
+					span.o-clocker-settings-steps-item-bullet 1
+					span.o-clocker-settings-steps-item-text Откуда
+
+				span.o-clocker-settings-steps-item
+					span.o-clocker-settings-steps-item-bullet 2
+					span.o-clocker-settings-steps-item-text Куда
+
+				span.o-clocker-settings-steps-item
+					span.o-clocker-settings-steps-item-bullet 3
+					span.o-clocker-settings-steps-item-text В сон!
+			
+
+		.o-clocker-settings-buttons
+			.table
+				.row
+					.cell
+						a(href="#").resetMetro Сбросить маршрут
+					.cell
+						select.likerstile(dir='rtl')
+							option(value="metrosMOSCOW") Москва
+							option(value="metrosSPB") Санкт-Петербург
+							option(value="metrosHARKOV") Харьков
+							option(value="metroMINSK") Минск
+							option(value="metrosKIEV") Киев
+
+	//- лоадинг
+	.o-clocker-loading
+		.table
+			.row
+				.cell
+					.o-clocker-loading-logo
+						img(src="assets/img/loading-logo.png", alt="")
+					.o-clocker-loading-text
+						span Будильник Метро
+
+	
+//- audio(src="Oxygen.ogg")
+//- video(src="Oxygen.ogg")
+
+#timer_end.hidden
+#timer_start.hidden
+#timer_afterstart.hidden
+
+script(type='text/javascript').
+
+	window.INTERVAL = 1000*60;
+
+script(type='text/javascript', src='cordova.js')
+
+script(type='text/javascript', src='assets/js/handlebars.js')
+
+script(type='text/javascript', src='assets/js/jquery-1.10.2.js')
+script(type='text/javascript', src='assets/js/metro.js')
+
+script(type='text/javascript', src='assets/js/typeahead.bundle.js')
+
+
+
+
+	
+
+
+script(type='text/javascript', src='assets/js/js-select.js')
+script(type='text/javascript', src='assets/js/timer.js')
+script(type='text/javascript', src='assets/js/phonegap-app.js')
+script(type='text/javascript').
+
+	window.app.initialize();
