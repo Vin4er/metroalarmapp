@@ -191,7 +191,21 @@ window.app = {
 		document.addEventListener('deviceready', function(){ self.app_ready() }, false);
 		
 
-	
+
+
+			document.addEventListener("resume", function(){
+				// alert('resume')
+			}, false);
+
+			document.addEventListener("pause", function(){
+				
+			}, false);
+			document.addEventListener("backbutton", function(){
+				
+			}, false);
+			document.addEventListener("menubutton", function(){
+				
+			}, false);
 		return this;
 		
 	},

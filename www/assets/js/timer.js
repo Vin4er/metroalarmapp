@@ -83,7 +83,7 @@ var setDate = function(t){
 window.setTimer = function(data){
 
 	window.calculate(data);
-	var ___TIME =  window.SET_GLOBAL_MINUTES(false);
+	window.___TIME =  window.SET_GLOBAL_MINUTES(false);
 
 	$('.bigtimer, .minutes').text(window.SET_GLOBAL_MINUTES(false));
 	
@@ -92,7 +92,7 @@ window.setTimer = function(data){
 
 	return setInterval(function(){
 
-		___TIME--;
+		window.___TIME--;
 		// если ноль
 		if( window.SET_GLOBAL_MINUTES(false)-1 == 0 ){
 			
@@ -104,17 +104,17 @@ window.setTimer = function(data){
 			$('.bigtimer, .minutes').show();
 			$('.o-clocker-sleep-bigtimer .cell div.texttext').text('');
 		}
-		if(___TIME <= 0){
+		if(window.___TIME <= 0){
 			window.SET_GLOBAL_MINUTES(true, 0)
 			// window.stepController(1)
-			___TIME = 0
+			window.___TIME = 0
 			// $('#timer_end').data( {detail: {finish: true}} ).trigger('click');
 			$('.wrap-time b, .o-clocker-sleep-bigtimer .cell div.texttimer').hide();
 			$('.bigtimer, .minutes').hide();
 			$('.o-clocker-sleep-bigtimer .cell div.texttext').text('Просыпайтесь, скоро ваша станция!');
 		}else{
-			$('.bigtimer, .minutes').text(___TIME);
-			$('.wrap-time b, .o-clocker-sleep-bigtimer .cell div.texttimer').html(declension(___TIME, ['минуту', 'минуты', 'минут']))
+			$('.bigtimer, .minutes').text(window.___TIME);
+			$('.wrap-time b, .o-clocker-sleep-bigtimer .cell div.texttimer').html(declension(window.___TIME, ['минуту', 'минуты', 'минут']))
 		}
 
 		
@@ -142,8 +142,11 @@ window.SET_GLOBAL_MINUTES = function(__true, ___ ){
 				}
 			}
 		}else{
-			if( ___t < 2 ){
+			if( ___t <=3  ){
 				delta =  1
+				if( ___t  == 1  ){
+					delta =  0
+				}
 			}else{
 				delta =  2
 			}
