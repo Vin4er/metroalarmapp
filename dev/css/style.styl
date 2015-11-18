@@ -133,11 +133,13 @@ audio, video
 		top 0
 		&-selects
 			padding-bottom 15px
-			padding-top 65px
+			padding-top 30px
 			position: relative;
 			z-index: 10;
 			&-item
 				padding-bottom 25px
+				@media screen and (max-height: 500px)
+					padding-bottom 10px
 			&-select
 				width 100%
 				input
@@ -194,10 +196,8 @@ audio, video
 		&-steps
 			position absolute
 			bottom: 150px
-			@media screen and (max-height: 540px) and (min-height: 500px)
-				bottom 90px
-			@media screen and (max-height: 500px)
-				bottom 90px
+			@media screen and (max-height: 540px)
+				bottom 110px
 			left: 0
 			right 0
 			&-line
@@ -227,17 +227,17 @@ audio, video
 					.o-clocker-settings-steps-item-text
 						color #00bff3
 				&-bullet
-					width: 35px;
-					height: 35px;
-					line-height: 35px;
-					border-radius: 50%;
-					background: rgba(0,191,243,0.09);
+					width: 35px
+					height: 35px
+					line-height: 35px
+					border-radius: 50%
+					background: rgba(0,191,243,0.09)
 					font-size: 20px;
-					display: inline-block;
-					text-align: center;
-					-webkit-transition: 0.7s;
-					transition: 0.7s;
-					font-weight: 700;
+					display: inline-block
+					text-align: center
+					-webkit-transition: 0.7s
+					transition: 0.7s
+					font-weight: 700
 				&-text
 					padding-top 8px
 					font-size 12px
@@ -247,7 +247,11 @@ audio, video
 					transition .7s
 					text-align center
 		&-buttons
-			padding-bottom 30px
+			padding-bottom 60px
+			@media screen and (max-height: 500px)
+				padding-bottom 30px
+			@media screen and (min-height: 550px)
+				padding-bottom 80px
 			position absolute
 			bottom 0
 			left: 0

@@ -325,12 +325,17 @@ video {
 }
 .o-clocker-settings-selects {
   padding-bottom: 15px;
-  padding-top: 65px;
+  padding-top: 30px;
   position: relative;
   z-index: 10;
 }
 .o-clocker-settings-selects-item {
   padding-bottom: 25px;
+}
+@media screen and (max-height: 500px) {
+  .o-clocker-settings-selects-item {
+    padding-bottom: 10px;
+  }
 }
 .o-clocker-settings-selects-select {
   width: 100%;
@@ -399,14 +404,9 @@ video {
   left: 0;
   right: 0;
 }
-@media screen and (max-height: 540px) and (min-height: 500px) {
+@media screen and (max-height: 540px) {
   .o-clocker-settings-steps {
-    bottom: 90px;
-  }
-}
-@media screen and (max-height: 500px) {
-  .o-clocker-settings-steps {
-    bottom: 90px;
+    bottom: 110px;
   }
 }
 .o-clocker-settings-steps-line-wrap {
@@ -463,12 +463,22 @@ video {
   text-align: center;
 }
 .o-clocker-settings-buttons {
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+}
+@media screen and (max-height: 500px) {
+  .o-clocker-settings-buttons {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-height: 550px) {
+  .o-clocker-settings-buttons {
+    padding-bottom: 80px;
+  }
 }
 .o-clocker-settings-buttons .table {
   height: 30px;

@@ -276,7 +276,7 @@
 	        {line: 7, color: "#FBAA33" , name: 'академическая', time: '3'},
 	        {line: 7, color: "#FBAA33" , name: 'ленинский проспект', time: '4'},
 	        {line: 7, color: "#FBAA33" , name: 'шаболовская', time: '3'},
-	        {line: 7, color: "#FBAA33" , name: 'октябырьская', time: '3'},
+	        {line: 7, color: "#FBAA33" , name: 'октябрьская', time: '3'},
 	        {line: 7, color: "#FBAA33" , name: 'третьяковская', time: '3'},
 	        {line: 7, color: "#FBAA33" , name: 'китай город', time: '2'},
 	        {line: 7, color: "#FBAA33" , name: 'тургеневская', time: '2'},
