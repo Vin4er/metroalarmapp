@@ -156,14 +156,19 @@ window.app = {
 	// приложние готово
 	app_ready: function(){
 		
-		/**  РЕКЛААААМИ   **/
+		/**  РЕКЛААААМА   **/
 		if (! AdMob ) {
 			// рекламы нет(
 		}else{
 			admobid = { // for Android
-				interstitial: 'ca-app-pub-6869992474017983/1657046752'
+				interstitial: 'ca-app-pub-3361083912516573/7916658640'
 			};
-			// if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow: true} );
+			if(AdMob){
+				AdMob.prepareInterstitial({
+					adId     : admobid.interstitial, 
+					autoShow : true
+				});
+			}
 		}
 		/******/
 

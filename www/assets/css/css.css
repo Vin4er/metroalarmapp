@@ -325,7 +325,7 @@ video {
 }
 .o-clocker-settings-selects {
   padding-bottom: 15px;
-  padding-top: 45px;
+  padding-top: 65px;
   position: relative;
   z-index: 10;
 }
@@ -395,18 +395,18 @@ video {
 }
 .o-clocker-settings-steps {
   position: absolute;
-  bottom: 120px;
+  bottom: 150px;
   left: 0;
   right: 0;
 }
 @media screen and (max-height: 540px) and (min-height: 500px) {
   .o-clocker-settings-steps {
-    bottom: 70px;
+    bottom: 90px;
   }
 }
 @media screen and (max-height: 500px) {
   .o-clocker-settings-steps {
-    bottom: 65px;
+    bottom: 90px;
   }
 }
 .o-clocker-settings-steps-line-wrap {
@@ -463,7 +463,7 @@ video {
   text-align: center;
 }
 .o-clocker-settings-buttons {
-  padding-bottom: 16px;
+  padding-bottom: 30px;
   position: absolute;
   bottom: 0;
   left: 0;
